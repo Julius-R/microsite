@@ -1,0 +1,62 @@
+.navbar {
+  background-color: $black;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 60px;
+  color: #fff;
+  .logo{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .nav-toggle-btn {
+    transition: 5s;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  .nav-close-btn {
+    transition: 5s;
+    display: none;
+    font-size: 1.5em;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  .links {
+    transition: .5s;
+    display: none;
+    padding-top: 10px;
+    height: 0vh;
+    background-color: #fff;
+    color: $orange;
+    .link {
+      padding: 10px;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    .nav-toggle-btn {
+      display: none;
+    }
+    .links {
+      background-color: inherit;
+      display: block;
+      color: #fff;
+      .link {
+        display: inline-block;
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
