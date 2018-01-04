@@ -117,7 +117,44 @@ body {
     float: right; } }
 
 .form-area {
-  padding-top: 150px; }
+  padding-top: 100px; }
+  .form-area h3 {
+    text-align: center; }
+  .form-area .form-control .form-item {
+    margin: 20px auto;
+    width: 100%; }
+    .form-area .form-control .form-item input {
+      width: 100%;
+      height: 50px;
+      background-color: transparent;
+      border: 2px solid #858d01;
+      border-radius: 5px;
+      padding: 10px;
+      outline: none; }
+    .form-area .form-control .form-item #submit {
+      cursor: pointer; }
+      .form-area .form-control .form-item #submit:hover {
+        background: #858d01;
+        color: #ecf0ec; }
+    .form-area .form-control .form-item select {
+      width: 100%;
+      height: 50px;
+      background-color: transparent;
+      border: 2px solid #858d01;
+      border-radius: 5px;
+      outline: none;
+      text-align: center;
+      cursor: pointer; }
+
+@media screen and (min-width: 880px) {
+  .form-area .form-control {
+    text-align: center;
+    margin: 20px auto; }
+    .form-area .form-control .form-item {
+      text-align: left;
+      display: inline-block;
+      margin: 20px;
+      width: 45%; } }
 
 footer {
   background-color: #c04a04;
